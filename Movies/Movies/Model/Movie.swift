@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 // MARK: - Welcome
 struct SetMovie: Codable {
     let page: Int
@@ -24,7 +23,7 @@ struct SetMovie: Codable {
 // MARK: - Result
 struct Movie: Codable {
     let adult: Bool
-    let backdropPath: String
+    let backdropPath: String?
     let genreIDS: [Int]
     let id: Int
     let originalLanguage, originalTitle, overview: String
